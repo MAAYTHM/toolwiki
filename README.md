@@ -1,4 +1,4 @@
-# Kali Tool Wiki
+# ToolWiki
 
 A dual-mode Python tool for managing and documenting installed tools in Kali Linux environments.
 
@@ -74,7 +74,7 @@ Edit `config/settings.json` to customize:
 Tools are stored in `data/tools.json` with automatic backups in `data/backups/`.
 
 ## Legend
-
+```
   ✅  - Tool path is verified and accessible
   ❌  - Tool path is not accessible or not found
   ℹ️  - Information or neutral status
@@ -90,6 +90,7 @@ Tools are stored in `data/tools.json` with automatic backups in `data/backups/`.
   🗑️  - Delete operation
   ✏️  - Update operation
   ➕  - Add operation
+```
 
 ## FAQ
 
