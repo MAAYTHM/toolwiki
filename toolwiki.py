@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Kali Tool Wiki - Dual-Mode Tool Management System
+ToolWiki - Dual-Mode Tool Management System
 ================================================
 
 A comprehensive tool for managing and documenting installed tools in Kali Linux environments.
 Supports both interactive menu mode and CLI mode with extensive search and export capabilities.
 
-Author: Generated for Kali Linux Tool Management
-Version: 2.0
+Author: MAAYTHM (https://github.com/MAAYTHM)
+Formatted By: A.I.
+Version: 0.1
 License: MIT
 """
 
@@ -60,8 +61,8 @@ except ImportError:
     HAS_PANDAS = False
 
 # Constants
-VERSION = "2.0"
-APP_NAME = "Kali Tool Wiki"
+VERSION = "0.1"
+APP_NAME = "ToolWiki"
 CONFIG_DIR = Path("config")
 DATA_DIR = Path("data")
 BACKUP_DIR = DATA_DIR / "backups"
