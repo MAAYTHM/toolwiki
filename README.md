@@ -110,6 +110,12 @@ A: Kali Tool Wiki helps you maintain a clear, searchable, and documented list of
 
 A: Contributions and suggestions are welcome! Please open issues or pull requests on the project's GitHub repository to help improve the tool.
 
+---
+## Updates
+- fix legends printing issue (its not printing when tool run 1st time)
+- auto add feature (to add some popular kali tools , which installed using `apt`)
+- etc...
+
 ## License
 
 MIT License - Personal and educational use
