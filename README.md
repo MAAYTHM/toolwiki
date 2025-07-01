@@ -35,26 +35,26 @@ python toolwiki.py export -f csv -o backup.csv
 
 ### Add Tools
 ```bash
-toolwiki add -n "tool_name" -p "/path/to/tool" -d "description" -c "category"
+python toolwiki.py add -n "tool_name" -p "/path/to/tool" -d "description" -c "category"
 ```
 
 ### Search Tools
 ```bash
-toolwiki search -n "name" --fuzzy
-toolwiki search -d "keyword" --regex
-toolwiki search -c "category" -t "tag1,tag2"
+python toolwiki.py search -n "name" --fuzzy
+python toolwiki.py search -d "keyword" --regex
+python toolwiki.py search -c "category" -t "tag1,tag2"
 ```
 
 ### List and Filter
 ```bash
-toolwiki list --category network --sort name
-toolwiki list --tags security,scanner --limit 10
+python toolwiki.py list --category network --sort name
+python toolwiki.py list --tags security,scanner --limit 10
 ```
 
 ### Export Data
 ```bash
-toolwiki export -f csv -o tools.csv
-toolwiki export -f markdown --filter "category=network"
+python toolwiki.py export -f csv -o tools.csv
+python toolwiki.py export -f markdown --filter "category=network"
 ```
 
 ## Interactive Mode
