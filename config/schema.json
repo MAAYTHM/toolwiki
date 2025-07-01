@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "required": ["metadata", "categories", "tools"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "created", "last_modified", "total_tools"],
+      "properties": {
+        "version": {"type": "string"},
+        "created": {"type": "string", "format": "date-time"},
+        "last_modified": {"type": "string", "format": "date-time"},
+        "total_tools": {"type": "integer", "minimum": 0},
+        "last_backup": {"type": "string", "format": "date-time"},
+        "mode_usage": {
+          "type": "object",
+          "properties": {
+            "menu": {"type": "integer", "minimum": 0},
+            "cli": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "default_mode": {"type": "string", "enum": ["auto", "menu", "cli"]},
+	"show_legend_on_start": {"type": "boolean"},
+        "color_theme": {"type": "string"},
+        "backup_frequency": {"type": "string"},
+        "search_defaults": {
+          "type": "object",
+          "properties": {
+            "fuzzy": {"type": "boolean"},
+            "limit": {"type": "integer", "minimum": 1}
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "path", "description", "category"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "description": {"type": "string"},
+          "category": {"type": "string"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "example_usage": {"type": "string"},
+          "date_added": {"type": "string", "format": "date-time"},
+          "last_modified": {"type": "string", "format": "date-time"},
+          "last_accessed": {"type": "string", "format": "date-time"},
+          "access_count": {"type": "integer", "minimum": 0},
+          "notes": {"type": "string"},
+          "verified": {"type": "boolean"},
+          "verification_date": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  }
+}
+
