@@ -1,0 +1,27 @@
+{
+  "default_mode": "auto",
+  "show_legend_on_start": true,
+  "color_theme": "default",
+  "backup_frequency": "weekly",
+  "backup_retention": 5,
+  "data_file": "data/tools.json",
+  "backup_dir": "data/backups",
+  "search_defaults": {
+    "fuzzy": true,
+    "case_sensitive": false,
+    "limit": 20
+  },
+  "colors": {
+    "success": "green",
+    "error": "red", 
+    "info": "blue",
+    "warning": "yellow",
+    "highlight": "cyan"
+  },
+  "ui": {
+    "pagination_size": 10,
+    "show_banner": true,
+    "confirm_destructive": true
+  }
+}
+

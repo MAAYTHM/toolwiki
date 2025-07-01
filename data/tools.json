@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "version": "0.1",
+    "created": "2025-07-01T09:03:17.987794+00:00",
+    "last_modified": "2025-07-01T10:10:14.771727+00:00",
+    "total_tools": 0,
+    "mode_usage": {
+      "menu": 0,
+      "cli": 0
+    }
+  },
+  "categories": [
+    "network",
+    "forensics",
+    "web",
+    "system",
+    "custom",
+    "sample"
+  ],
+  "tools": []
+}

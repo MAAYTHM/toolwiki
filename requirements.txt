@@ -1,0 +1,7 @@
+# Kali Tool Wiki Dependencies
+jsonschema>=4.17.0
+colorama>=0.4.6
+rapidfuzz>=3.0.0
+pandas>=2.0.0
+PyYAML>=6.0
+
